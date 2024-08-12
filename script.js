@@ -5,9 +5,9 @@ const content = document.querySelector('.content')
 function speak(text){
     const text_speak = new SpeechSynthesisUtterance(text);
 
-    text_speak.rate = 1.3;
+    text_speak.rate = 1;
     text_speak.volume = 1;
-    text_speak.pitch = 5;
+    text_speak.pitch = 2;
 
     window.speechSynthesis.speak(text_speak);
 }
