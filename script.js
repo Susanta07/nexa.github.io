@@ -60,6 +60,14 @@ function takeCommand(message){
         window.open("https://google.com", "_blank");
         speak("Opening Google...")
     }
+    else if(message.includes("open my website")){
+        window.open("https://susanta07.github.io/myport.github.io/", "_blank");
+        speak("wow, Here we go...")
+    }
+    else if(message.includes("open Calculator")){
+        window.open("https://susanta07.github.io/ioscalculator.github.io/", "_blank");
+        speak("Here we go...")
+    }
     else if(message.includes("open youtube")){
         window.open("https://youtube.com", "_blank");
         speak("Opening Youtube...")
@@ -97,13 +105,6 @@ function takeCommand(message){
         const finalText = date;
         speak(finalText);
     }
-
-    else if(message.includes('calculator')) {
-        window.open('Calculator:///')
-        const finalText = "Opening Calculator";
-        speak(finalText);
-    }
-
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on google";
